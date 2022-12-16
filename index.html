@@ -2,76 +2,239 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Redesign Project</title>
+    <title>New Redesign</title>
+    <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 <body>
 
-<div class="container ps-4 pe-4 pt-4 pb-4">
-    <div class="container text-center mb-5">
-        <h1 class="display-1">Redesign</h1>
-        <p class="fw-light fs-4">This project is about redesign the IEX career page.</p>
-    </div>
-    <div class="row mb-5">
-        <div class="col-lg-6 ps-3 pe-3 text-center">
-            <h1 class="display-5">Original Webpage</h1>
-            <img class="img-fluid" src="iexcareer.png" alt="iexcareer.png"/>
-            <a class="pt-2" href="https://iex.io/careers/#open-positions">IEX original career page</a>
+<div class="background-image"></div>
+<nav class="navbar fixed-top navbar-expand-sm bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-2" href="https://peaceful-brigadeiros-ba83da.netlify.app">
+            <img class="img-fluid" width="25" src="homeicon.png" alt=""/>
+            <!--                <span class="fs-5 text-light">Chowdeck</span>-->
+        </a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#start">
+                        <span class="text-dark">Start</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projectoverview">
+                        <span class="text-dark">Project Overview</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lofi">
+                        <span class="text-dark">Low-fidelity Wireframing</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#styleguide">
+                        <span class="text-dark">Visual Style Guide</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hifi">
+                        <span class="text-dark">High-Fidelity Prototyping</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#webpage">
+                        <span class="text-dark">Final Webpage</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#conclusion">
+                        <span class="text-dark">Conclusion</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="col-lg-6 ps-3 pe-3 text-center">
-            <h1 class="display-5">Redesign Webpage</h1>
-            <img class="img-fluid" src="iexcareerredesign.png" alt="iexcareerredesign.png"/>
-            <a class="pt-2" href="redesign.html">IEX redesign career page</a>
+    </div>
+</nav>
+
+<div class="row pt-5">
+    <div class="col-md-8 ps-5 large-padding">
+        <div class="display-1 pb-5" id="start">Redesign</div>
+        <ul class="fw-light fs-4 text-secondary">
+            <li>Have you ever had a moment when you were dissatisfied with some web page during your internet surfing? Maybe they are good enough, but you still have some new ideas.</li>
+            <li>Maybe a different design would make it look better? Maybe there’s a usability problem that you want to fix?</li>
+            <li>In this project, let’s <span class="text-dark">Redesign the IEX Career Pages</span> together.</li>
+        </ul>
+
+        <div class="row mt-5 large-bottom">
+            <div class="col-lg-6 ps-3 pe-3 text-center">
+                <a href="https://iex.io/careers/#open-positions">
+                    <img class="img-fluid max-image" src="iexcareer.png" alt="iexcareer.png"/>
+                </a>
+                <div class="fw-light">Original IEX Career Webpage</div>
+            </div>
+            <div class="col-lg-6 ps-3 pe-3 text-center">
+                <a href="redesign.html">
+                    <img class="img-fluid max-image" src="iexcareerredesign.png" alt="iexcareerredesign.png"/>
+                </a>
+                <div class="fw-light">Redesigned IEX Career Webpage</div>
+            </div>
         </div>
-        <p class="mt-3 fw-light text-center">The reason I choose IEX career page to redesign is because, I was looking for an internship recently and I want to redesign one of the career page I have seen and thought could be improved, and make it better (hopefully :) )</p>
-    </div>
-    <div class="container mb-5">
-        <h1 class="display-5">Problems</h1>
-        <p>I found several problems in the original webpage and want to focus on them during the redesign.</p>
-        <img class="img-fluid" src="problems.jpeg" alt="problems.jpeg"/>
-    </div>
 
-    <div class="container mb-5">
-        <h1 class="display-5">
-            Accessibility
-        </h1>
-        <p>After using the WebAIM WAVE, I also detected some possible accessibility problems</p>
-        <p>
-            There are 6 errors. 2 errors are missing alternative text for pictures so nothing will show up in the image position when images are not successfully loaded. 1 error is the language of the HTML document is missing then some search engines cannot identify which language this document is using.  1 error is the empty heading, maybe the webpage developer just wants to use the title tag to create an empty space. 2 errors are the empty button, the webpage developer didn’t put any value text in the button but used another way to label it and implemented its functionality.
-        </p>
-        <p>
-            Through these errors, we can see the webpage is not developed under a good, standard specification. Although maybe everything works as the developer expects now, this webpage still has hidden design problems. I agree with these problems. I don’t think these are big problems, since this is just a career page of a small company, those problems won’t impact the usability. However, these problems may impact visitors’ impression of this company.
-        </p>
-    </div>
+        <div class="large-bottom pt-5" id="projectoverview">
+            <div class="fw-light display-4 pb-4">
+                Project Overview
+            </div>
+            <div class="fw-light fs-5 text-secondary">
+                <div class="row text-dark pb-4">
+                    <div class="col-md-6">
+                        Languages: HTML/CSS (Framework: Bootstrap)
+                    </div>
+                    <div class="col-md-6">
+                        Tools: Figma, IntelliJ
+                    </div>
+                </div>
+                <div class="pb-1">To redesign a webpage, we need several steps:</div>
+                <ol>
+                    <li class="pb-1">
+                        Identifying problems that existed in the original webpage.
+                    </li>
+                    <li class="pb-1">
+                        Draw Low-Fidelity wireframes for the webpage redesign by hand. In another word, create a “draft” for the webpage redesign.
+                    </li>
+                    <li class="pb-1">
+                        Create a visual design style guide for the webpage, to identify which style we are going to use for the webpage redesign.
+                    </li>
+                    <li class="pb-1">
+                        Do High-Fidelity Prototyping, which is based on the “draft” we have to create the webpage prototype using Figma (without real coding).
+                    </li>
+                    <li class="pb-1">
+                        Build the real webpage!
+                    </li>
+                </ol>
+            </div>
+        </div>
 
-    <div class="container mb-5">
-        <h1 class="display-5">Low-fidelity Wireframing</h1>
-        <p>I create three lo-fi wireframes for the webpage redesign.</p>
-        <p class="fs-4">For desktop (and explaination about problems solving)</p>
-        <img class="img-fluid" src="lofidesktop.jpeg" alt="lofidesktop.jpeg"/>
-        <p class="fs-4">For tablet and mobile (Left tablet Right mobile)</p>
-        <p>Actually, all problems are solved in the same way here as above desktop wireframe. So didn't make additional annotation here.</p>
-        <img class="img-fluid" src="lofiTabPho.jpg" alt="lofiTabPho.jpg"/>
-    </div>
+        <div class="large-bottom pt-5" id="problems">
+            <div class="fw-light display-4 pb-4">
+                Problems
+            </div>
+            <div class="fw-light fs-5 text-secondary">
+                <div class="pb-4">
+                    Identifying problems that existed in the original webpage.
+                </div>
+                <img class="img-fluid max-image" src="problems.jpeg" alt="problems.jpeg"/>
+            </div>
+        </div>
 
-    <div class="container mb-5">
-        <h1 class="display-5">Visual Design Style Guide</h1>
-        <p>I made a Visual Design Style Guide for the webpage redesign.</p>
-        <a href="https://www.figma.com/file/yheH0P8Ohe4vciotkGNzcX/Untitled?node-id=0%3A1">Visual Design Style Guide</a>
-    </div>
+        <div class="large-bottom pt-5" id="lofi">
+            <div class="fw-light display-4 pb-4">
+                Low-fidelity Wireframing
+            </div>
+            <div class="fw-light fs-5 text-secondary">
+                <div class="pb-4">
+                    Draw Low-Fidelity wireframes for the webpage redesign by hand. Let's do lo-fi wireframing for 3 types of screen and make it responsive!
+                </div>
+                <div class="pb-4">
+                    The annotation in the desktop version explained how the redesign solved the problems we found earlier.
+                </div>
+                <div class="text-dark">Desktop version</div>
+                <img class="img-fluid pb-4 max-image" src="lofidesktop.jpeg" alt="lofidesktop.jpeg"/>
+                <div class="text-dark">Tablet and Phone version</div>
+                <img class="img-fluid max-image" src="lofiTabPho.jpg" alt="lofiTabPho.jpg"/>
+<!--                <div class="row">-->
+<!--                    <div class="col-md-6">-->
+<!--                        <img class="img-fluid" src="lofidesktop.jpeg" alt="lofidesktop.jpeg"/>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-6">-->
+<!--                        <img class="img-fluid" src="lofiTabPho.jpg" alt="lofiTabPho.jpg"/>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
 
-    <div class="container mb-5">
-        <h1 class="display-5">High-Fidelity Prototyping</h1>
-        <p>These are three hi-fi prototypes. For clarity, all notations and explanations are included in the first prototypes (desktop screen size) </p>
-        <a href="https://www.figma.com/file/cEv3OZgVnYXAGW606jeAen/Untitled-(Copy)">Hifi pro desktop screen</a>
-        <br/>
-        <a href="https://www.figma.com/file/FO5wt2rQN7gcAUV7OWii8r/lofi2">Hifi pro tablet screen</a>
-        <br/>
-        <a href="https://www.figma.com/file/JcXIAjSqIDpZEfMRXsqOIr/lofi3">Hifi pro mobile screen</a>
-    </div>
+        <div class="large-bottom pt-5" id="styleguide">
+            <div class="fw-light display-4 pb-4">
+                Visual Design Style Guide
+            </div>
+            <div class="fw-light fs-5 text-secondary">
+                <div class="pb-4">
+                    The visual style guide displays the main colors, typography, and reusable components’ different states.
+                </div>
+                <a href="https://www.figma.com/proto/yheH0P8Ohe4vciotkGNzcX/PleaseWaitForTheImageToLoadThx?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1">
+                    <img class="img-fluid max-image" src="styleguide.png" alt="styleguide.png"/>
+                </a>
+            </div>
+        </div>
 
+        <div class="large-bottom pt-5" id="hifi">
+            <div class="fw-light display-4 pb-4">
+                High-Fidelity Prototyping
+            </div>
+            <div class="fw-light fs-5 text-secondary">
+                <div class="pb-4">
+                    Ready to go. Let's build our webpage in Figma and see if the design works.
+                </div>
+                <div class="text-dark pb-4">
+                    Desktop version
+                </div>
+                <iframe class="pb-4" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FcEv3OZgVnYXAGW606jeAen%2FUntitled-(Copy)%3Fnode-id%3D0%253A1%26t%3D5Vh3tLRZB0ASOI4X-1" allowfullscreen></iframe>
+                <div class="text-dark pb-4">
+                    Tablet version
+                </div>
+                <iframe class="pb-4" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFO5wt2rQN7gcAUV7OWii8r%2Flofi2%3Fnode-id%3D0%253A1%26t%3DVnxv8AYonJDYxG4f-1" allowfullscreen></iframe>
+                <div class="text-dark pb-4">
+                    Mobile phone version
+                </div>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJcXIAjSqIDpZEfMRXsqOIr%2Flofi3%3Fnode-id%3D0%253A1%26t%3D7TKT3x6tY5amWIoG-1" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="large-bottom pt-5" id="webpage">
+            <div class="fw-light display-4 pb-4">
+                Final Webpage
+            </div>
+            <div class="fw-light fs-5 text-secondary">
+                <div class="pb-4">
+                    This is the final web page builded. Try it out!
+                </div>
+                <div>
+                    <a href="https://iex.io/careers/#open-positions">
+                        Original IEX Career Page
+                    </a>
+                </div>
+                <div>
+                    <a href="redesign.html">
+                        Redesigned IEX Career Page
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="large-bottom pt-5" id="conclusion">
+            <div class="fw-light display-4 pb-4">
+                Conclusion
+            </div>
+            <div class="fw-light fs-5 text-secondary">
+                <div>
+                    In this project, we go through the process that redesigning a webpage needed. First, we need to find the problems of the original webpage, then draw a “draft” that seems can solve the problems. After that, draw a visual style guide and use software like Figma to build a prototype of the redesigned webpage. If it looks good, write code and build the real webpage.
+                </div>
+                <div>
+                    At the same time, this project also explored responsive design. As the annotation in the hi-fi prototype said, the technique used to deal with the responsive functionality is the Bootstrap grid system.
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <div class="col-md-4">
+
+    </div>
 </div>
+
 
 </body>
 </html>
